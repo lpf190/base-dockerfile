@@ -21,9 +21,9 @@ example usage in Drone v.5 pipeline
 ```bash
 pipeline:
   auth:
-    image: drone-auth-ecr
-    access_id: ACCESS_ID
-    secret_key: SECRET_KEY
+    image: lpf190/drone-pull-ecr:0.06
+    access_id: ${ACCESS_ID}  # set secret key
+    secret_key: ${SECRET_KEY}
     region: ap-northeast-1
     ecr_image: 376045331903.dkr.ecr.ap-northeast-1.amazonaws.com/nginx:alpine-1.15.2
     volumes:
